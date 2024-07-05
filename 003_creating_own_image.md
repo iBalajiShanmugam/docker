@@ -12,3 +12,7 @@ docker build .
 docker build -t balaji/redis:latest .
 
 writing a dockerfile == Being given a computer with no os and being told install chrome
+
+# with port 
+
+sudo docker run -p 8080:8080 balaji/simpleweb
