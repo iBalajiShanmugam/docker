@@ -1,11 +1,12 @@
 # Specify a base iamge
 
-FROM node:alpine3.20
+FROM node:14-alpine
 
-# Install some depenendencies
-
+WORKDIR /usr/app
 # Install some dependencies
+COPY ./package.json ./
 RUN npm install
+COPY ./ ./
 
 #Default command
 
